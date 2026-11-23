@@ -31,5 +31,5 @@ cd web/sitio && python3 -m http.server 8000
 
 ## Pendiente de decidir con Carlos
 
-- Precios: orientativos 9 €/mes o 79 €/año por móvil (confirmar si hay descuento por varios móviles).
+- Precios (Carlos, 23 nov): primer móvil 9 €/mes o 79 €/año; cada móvil más 49 €/año. Falta el precio mensual del móvil adicional (propuesta: 5 €/mes).
 - Acceso a Cloudflare para publicar (o el repositorio desde el que se publica hoy la web).
