@@ -3,6 +3,7 @@ package es.minimalista.mayores.kiosk
 import android.app.Activity
 import android.app.ActivityManager
 import android.app.admin.DevicePolicyManager
+import android.app.admin.SystemUpdatePolicy
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
@@ -14,10 +15,13 @@ import es.minimalista.mayores.launcher.MainActivity
 /**
  * Modo quiosco (lock task). Funciona de dos formas:
  *
- * 1. Pruebas locales: la app es Device Owner (por adb) y se pone ella misma las políticas.
- * 2. Producción: Android Management API es el Device Owner; la política incluye esta app en
- *    `kioskCustomLauncherEnabled`/`lockTaskAllowed` y la lista de apps permitidas.
- *    Entonces [isLockTaskPermitted] es true y aquí solo hay que entrar en el quiosco.
+ * 1. La app es Device Owner (por adb en pruebas, por QR en producción) y se pone ella misma
+ *    las políticas.
+ *    Es también el modo de la versión gratis: la app es la propietaria del móvil
+ *    (aprovisionada por QR al restablecerlo) y no hay servidor ni Android Management.
+ * 2. Suscripción (opcional, más adelante): si un gestor remoto como Android Management es el
+ *    Device Owner y su política permite esta app en lock task, [isLockTaskPermitted] es true
+ *    y aquí solo hay que entrar en el quiosco.
  */
 class KioskManager(private val context: Context) {
     private val dpm = context.getSystemService(DevicePolicyManager::class.java)
@@ -47,6 +51,10 @@ class KioskManager(private val context: Context) {
                 addCategory(Intent.CATEGORY_DEFAULT)
             }
             dpm.addPersistentPreferredActivity(admin, home, ComponentName(context, MainActivity::class.java))
+            // Actualizaciones del sistema automáticas, sin preguntar al mayor.
+            dpm.setSystemUpdatePolicy(admin, SystemUpdatePolicy.createAutomaticInstallPolicy())
+            // Las apps se actualizan solas desde Google Play aunque la tienda no salga en el
+            // modo mayor: solo la quitamos del lanzador, nunca la ocultamos ni la desactivamos.
         } catch (e: SecurityException) {
             Log.w(TAG, "No se pudieron aplicar las políticas", e)
         }

@@ -22,7 +22,7 @@
     <string name="familia_salir">Volver al modo mayor</string>
     <string name="familia_kiosco">Modo quiosco (bloqueo de pantalla)</string>
     <string name="familia_estado_owner">La app es propietaria del dispositivo (Device Owner): el quiosco funciona.</string>
-    <string name="familia_estado_permitido">El quiosco lo gestiona la política de la empresa (Android Management).</string>
+    <string name="familia_estado_permitido">El quiosco lo gestiona el gestor remoto.</string>
     <string name="familia_estado_sin_owner">La app no es propietaria del dispositivo. El quiosco no está disponible; mira docs/PRUEBAS.md.</string>
     <string name="familia_ajustes">Abrir ajustes de Android</string>
     <string name="familia_quitar_owner">Quitar Device Owner (solo pruebas)</string>
