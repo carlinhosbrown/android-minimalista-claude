@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Móvil Fácil</string>
+    <string name="familia">Familia</string>
+    <string name="familia_mantener">Mantén pulsado para entrar en el modo familiar</string>
+    <string name="sin_apps">Todavía no hay aplicaciones.\nPide a tu familia que las active.</string>
+    <string name="app_no_disponible">Esta aplicación no está instalada</string>
+
+    <string name="pin_crear">Crea un PIN de 4 a 8 cifras para el modo familiar</string>
+    <string name="pin_repetir">Repite el PIN</string>
+    <string name="pin_introducir">Introduce el PIN familiar</string>
+    <string name="pin_incorrecto">PIN incorrecto</string>
+    <string name="pin_no_coincide">Los PIN no coinciden. Vuelve a empezar.</string>
+    <string name="pin_corto">El PIN debe tener entre 4 y 8 cifras</string>
+    <string name="pin_bloqueado">Demasiados intentos. Espera %1$d segundos.</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="familia_titulo">Modo familiar</string>
+    <string name="familia_apps">Aplicaciones visibles para el mayor</string>
+    <string name="familia_no_recomendada">No recomendada: los SMS se usan mucho para estafas</string>
+    <string name="familia_cambiar_pin">Cambiar PIN</string>
+    <string name="familia_salir">Volver al modo mayor</string>
+    <string name="familia_kiosco">Modo quiosco (bloqueo de pantalla)</string>
+    <string name="familia_estado_owner">La app es propietaria del dispositivo (Device Owner): el quiosco funciona.</string>
+    <string name="familia_estado_permitido">El quiosco lo gestiona la política de la empresa (Android Management).</string>
+    <string name="familia_estado_sin_owner">La app no es propietaria del dispositivo. El quiosco no está disponible; mira docs/PRUEBAS.md.</string>
+    <string name="familia_ajustes">Abrir ajustes de Android</string>
+    <string name="familia_quitar_owner">Quitar Device Owner (solo pruebas)</string>
+    <string name="familia_owner_quitado">Device Owner quitado. Ya puedes desinstalar la app.</string>
+    <string name="familia_mover_arriba">Subir</string>
+</resources>

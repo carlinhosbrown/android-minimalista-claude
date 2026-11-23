@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Alto contraste: fondo casi negro y texto blanco, pensado para vista cansada. -->
+    <color name="fondo">#FF101418</color>
+    <color name="tarjeta">#FF1F2A33</color>
+    <color name="tarjeta_pulsada">#FF34495A</color>
+    <color name="texto">#FFFFFFFF</color>
+    <color name="texto_suave">#FFC9D4DC</color>
+    <color name="acento">#FF4FC3F7</color>
+    <color name="aviso">#FFFFB74D</color>
+    <color name="peligro">#FFEF5350</color>
+</resources>
