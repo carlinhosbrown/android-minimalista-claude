@@ -160,6 +160,7 @@ button:disabled{opacity:.65;cursor:wait;transform:none!important}
 .plan-main{border-color:#cfe2f2;box-shadow:0 18px 50px rgba(42,72,97,.09)}
 .plan-name{font-size:14px;font-weight:850;color:var(--blue2);letter-spacing:.02em}
 .plan-price{font-size:44px;font-weight:850;letter-spacing:-.045em;margin:8px 0 8px}
+.plan-per{font-size:18px;font-weight:700;color:var(--muted);letter-spacing:0;margin-left:4px}
 .plan-desc{color:var(--muted);margin:0 0 22px;line-height:1.55}
 .plan-list{list-style:none;padding:0;margin:0 0 28px;display:grid;gap:11px;flex:1}
 .plan-list li{display:flex;gap:10px;color:#4f5961;line-height:1.45}

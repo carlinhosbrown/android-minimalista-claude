@@ -31,5 +31,5 @@ cd web/sitio && python3 -m http.server 8000
 
 ## Pendiente de decidir con Carlos
 
-- Precios de la suscripción (por móvil, mensual y anual).
+- Precios: orientativos 9 €/mes o 79 €/año por móvil (confirmar si hay descuento por varios móviles).
 - Acceso a Cloudflare para publicar (o el repositorio desde el que se publica hoy la web).
